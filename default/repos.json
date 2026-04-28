@@ -1,0 +1,10 @@
+{
+  "lab-env-setup": {
+    "repos": [
+      {
+        "template": "Azure-Samples/octocat-supply",
+        "include_all_branches": false
+      }
+    ]
+  }
+}
