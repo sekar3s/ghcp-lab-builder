@@ -24,9 +24,9 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "ghas-lab-builder",
-	Short: "Builds GitHub Advanced Security Lab environments(orgs, repos, users)",
-	Long: `ghas-lab-builder is a CLI tool that helps you set up GitHub Advanced Security Lab environments by 
+	Use:   "ghcp-lab-builder",
+	Short: "Builds GitHub Copilot Lab environments(orgs, repos, users)",
+	Long: `ghcp-lab-builder is a CLI tool that helps you set up GitHub Copilot Lab environments by 
           automating the creation of organizations, repositories, and addings  users required for hands-on labs.`,
 	PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 		// Validate that either token OR (app-id + private-key) is provided, but not both
@@ -57,7 +57,7 @@ var rootCmd = &cobra.Command{
 		}
 
 		// Generate log file path automatically
-		logFilePath := util.GenerateLogFileName("ghas-lab-builder")
+		logFilePath := util.GenerateLogFileName("ghcp-lab-builder")
 
 		// Initialize logger with automatic log file
 		loggerConfig := util.LoggerConfig{
