@@ -20,5 +20,5 @@ const (
 	DefaultBaseURL   string = "https://api.github.com"
 	EnterpriseType   string = "Enterprise"
 	OrganizationType string = "Organization"
-	DefaultOrgPrefix string = "ghas-labs"
+	DefaultOrgPrefix string = "ghcp-labs"
 )
